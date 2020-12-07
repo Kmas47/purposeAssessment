@@ -58,8 +58,8 @@ export default function Details() {
                 <th className={styles.heading}>Index</th>
                 <th className={styles.heading}>Ticker</th>
                 <th className={styles.heading}>Date</th>
-                <th className={styles.heading}>Value</th>
-                <th className={styles.heading}>Update Value</th>
+                <th className={styles.heading}>Net Asset Value</th>
+                <th className={styles.heading}>Update Net Asset Value</th>
                 <th className={styles.heading}>Update</th>
                 
                 { 
@@ -71,7 +71,7 @@ export default function Details() {
                                 <td>{e}</td> 
                                 <td>{date[i]}</td> 
                                 <td>{value[i]}</td>
-                                <td><input className={styles.input} placeholder="update the value of ticker"></input></td>
+                                <td><input className={styles.input} placeholder={`update the value of fund ${e}`}></input></td>
                                 <td><button className={styles.update} onClick={() => {}}>Update</button></td>
                             </tr> 
                         ) 
