@@ -1,6 +1,6 @@
 
 
-const apiEndPoint = `https://purposecloud.s3.amazonaws.com/challenge-data.json`;
+const apiEndPoint = `${process.env.NEXT_PUBLIC_API_ENDPOINT}`;
 const res =  fetch(apiEndPoint);
 const data =  res.then(e => e.json())
 
